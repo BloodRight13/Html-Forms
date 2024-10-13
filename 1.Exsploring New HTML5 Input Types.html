@@ -1,0 +1,78 @@
+<!-- Task 1 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Input Form</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+<!-- Task 2 -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantity Input Form</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <label for="quantity">Enter Quantity:</label>
+        <input type="number" id="quantity" name="quantity" placeholder="Enter a number" min="1" max="100" step="1" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+<!-- Task 3 -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Input Form</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <label for="appointment-date">Select a Date:</label>
+        <input type="date" id="appointment-date" name="appointment-date" 
+               placeholder="yyyy-mm-dd" 
+               min="2023-01-01" max="2023-12-31" required>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+<!-- Task 4 -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Range Input Form</title>
+    <style>
+        .range-value {
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        function updateRangeValue(val) {
+            document.getElementById('rangeValue').textContent = val;
+        }
+    </script>
+</head>
+<body>
+
+    <h2>Rate Our Service</h2>
+    <form action="#" method="post">
+        <label for="rating">Rating (1 to 10):</label>
+        <input type="range" id="rating" name="rating" min="1" max="10" value="5" oninput="updateRangeValue(this.value)">
+        <span class="range-value" id="rangeValue">5</span>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

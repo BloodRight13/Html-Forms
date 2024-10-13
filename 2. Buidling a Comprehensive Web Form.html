@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selection Experience Form</title>
+</head>
+<body>
+    <h1>Programming Preferences Form</h1>
+    <form>
+        <!-- Select Menu for Favorite Programming Language -->
+        <label for="favorite-language">Choose your favorite programming language:</label>
+        <select id="favorite-language" name="favorite-language">
+            <option value="python">Python</option>
+            <option value="javascript">JavaScript</option>
+            <option value="java">Java</option>
+            <option value="csharp">C#</option>
+            <option value="ruby">Ruby</option>
+            <option value="php">PHP</option>
+        </select>
+        <br><br>
+
+        <!-- Radio Buttons for Level of Expertise -->
+        <fieldset>
+            <legend>Indicate your level of expertise:</legend>
+            <input type="radio" id="beginner" name="expertise" value="beginner">
+            <label for="beginner">Beginner</label><br>
+
+            <input type="radio" id="intermediate" name="expertise" value="intermediate">
+            <label for="intermediate">Intermediate</label><br>
+
+            <input type="radio" id="advanced" name="expertise" value="advanced">
+            <label for="advanced">Advanced</label>
+        </fieldset>
+        <br>
+
+        <!-- Checkboxes for Preferred Development Platforms -->
+        <fieldset>
+            <legend>Select your preferred development platforms:</legend>
+            <input type="checkbox" id="web" name="platform" value="web">
+            <label for="web">Web</label><br>
+
+            <input type="checkbox" id="mobile" name="platform" value="mobile">
+            <label for="mobile">Mobile</label><br>
+
+            <input type="checkbox" id="desktop" name="platform" value="desktop">
+            <label for="desktop">Desktop</label>
+        </fieldset>
+        <br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
